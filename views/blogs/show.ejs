@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<div class='row'>
+    <div class='col-md-8'>
+        <h1 class="display-2"><%= blog.title %></h1>
+        <br>
+        <p>By: <%= blog.author %></p>
+        <p>Date: <%= blog.createdOn.toDateString() %></p>
+        <img src='<%= blog.image %>' class='w-50 mx-auto d-block rounded'>
+        <br>
+        <p><%= blog.body %></p>
+        <a href='/blogs/<%= blog._id %>/edit' class='btn btn-warning'>Edit Post</a>
+        <a href='/blogs' class='btn btn-primary'>Go Back</a>
+    </div>
+    <div class='col-md-4'>
+        <h3>About the Author:</h3>
+        <p>He's a d bag!!!</p>
+    </div>
+</div> 
+
+<% include ../partials/footer %>
