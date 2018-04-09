@@ -1,4 +1,28 @@
+/* Navigation
+************************************/
+nav#navigation {
+    margin-bottom: 2%;
+}
+
+
+/* Index Page
+************************************/
+.index-post {
+    margin-bottom: 5%;
+}
+
+
+/* Comments Page
+************************************/
+.comments {
+    margin-top: 3%;
+}
+
+
+/* Footer Section
+************************************/
 .footer {
     width: 100%;
     margin-top: 5%;
 }
+

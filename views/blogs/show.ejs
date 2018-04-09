@@ -11,6 +11,16 @@
         <p><%= blog.body %></p>
         <a href='/blogs/<%= blog._id %>/edit' class='btn btn-warning'>Edit Post</a>
         <a href='/blogs' class='btn btn-primary'>Go Back</a>
+        <hr>
+        <div>
+            <h5 style='display: inline-block'>Comments:</h5>
+            <a href='/blogs/<%= blog._id %>/comments/new' class='btn btn-success float-right'>Add Comment</a>
+            <div class='comments'>
+            <% blog.comments.forEach(function(comment) { %>
+                <p><%= comment.comment %> - <strong><%= comment.author %></strong></p>
+            <% }); %>
+            </div>
+        </div>
     </div>
     <div class='col-md-4'>
         <h3>About the Author:</h3>
